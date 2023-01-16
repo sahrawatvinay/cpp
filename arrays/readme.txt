@@ -35,3 +35,8 @@ not the complete array. tabhi print array ke sath size bhejte hai void wale fn m
 
 initiazing the array with arr[size] is bad practise. where the size is a variable entered by user. 
 int arr[100000] is still a better practise than this.
+
+
+* when we pass an array as an argument to a function, it does not create a copy of that array, rather, the address of array is being 
+passed, and if we try to do any updations to that array in the function the value of actual array also gets updated. but in case of variables
+it is not so, a copy is being created in case of variables and the values does not get altered if changed in the called fn.
