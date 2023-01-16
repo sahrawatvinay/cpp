@@ -25,3 +25,13 @@ Examples:
 
 Calculating the address of third element-
 int arr[3] = 100 + (3*4) = 112  //start_address_of_array + (index_jiski_nikalni * array_datatype_size); 
+
+
+Calculating the size of an array-
+int arr[100] = {5,6,7};   //5 6 7 0 0 0 0 ....... 0
+size = sizeof(arr)/sizeof(int);  //this has a problem because in the above ex. we are only interested in the 3 elements 
+not the complete array. tabhi print array ke sath size bhejte hai void wale fn me array print
+
+
+initiazing the array with arr[size] is bad practise. where the size is a variable entered by user. 
+int arr[100000] is still a better practise than this.
